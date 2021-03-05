@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Bestilling av Kinobiletter!</title>
+
+
+</head>
+<body>
+<center>
+    <h2>Bestilling av Kinobiletter!</h2>
+    <table>
+        <tr>
+            <td>Velg Film: </td>
+            <td><select id="film">
+                <option style="color:red;">Choose one film</option>
+                <option>Un Solved Problem</option>
+                <option>Bad Boys for life</option>
+                <option>Friends</option>
+                <option>Rival dale</option>
+                <option>About last Night</option>
+            </select>
+            </td>
+            <td><div id="filmdiv"></div></td>
+        </tr>
+
+        <tr>
+            <td>Anatall: </td><td><input size="3" type="text" id="antall"/> </td>
+            <td>  <div id="antalldiv"></div> </td>
+        </tr>
+
+
+
+        <tr>
+            <td>Fornavn: </td><td><input type="text" id="fornavn"/> </td>
+            <td>  <div id="fornavndiv"></div> </td>
+        </tr>
+
+        <tr>
+            <td>Etternavn: </td><td><input type="text" id="etternavn"/> </td>
+            <td> <div id="etternavndiv"> </div> </td>
+        </tr>
+
+        <tr>
+            <td>Telefonnr: </td><td><input type="text" id="telefonNr"/> </td>
+            <td><div id="telefonNrdiv"></div></td>
+        </tr>
+
+        <tr>
+            <td>E-post: </td><td><input type="text" id="epost"/></td>
+            <td><div id="epostdiv"></div></td>
+        </tr>
+
+    </table>
+    <input type="submit" value="kjøpe billett" onclick="kjopebillett()" />
+    <h2>Alle Billeter</h2>
+    <div id="kjopebillett"></div>
+    <input type="button"  value="Slett alle billetene"onclick="slett()">
+
+</center>
+
+</body>
+</html>
