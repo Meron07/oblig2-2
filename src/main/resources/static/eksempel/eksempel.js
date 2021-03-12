@@ -7,25 +7,25 @@ $(() => {
         const telefonNr = $("#telefonNr");
         const epost = $("#epost");
 
-    const billett = {
-        film: film.val(),
-        antall: antall.val(),
-        fornavn: fornavn.val(),
-        etternavn: etternavn.val(),
-        telefonNr: telefonNr.val(),
-        epost: epost.val()
+        const billett = {
+            film: film.val(),
+            antall: antall.val(),
+            fornavn: fornavn.val(),
+            etternavn: etternavn.val(),
+            telefonNr: telefonNr.val(),
+            epost: epost.val()
         };
-    if (inputval(billett)){
-        $.post("/lagre", billett, () => hent ());
-        film.val("");
-        antall.val("");
-        fornavn.val("");
-        etternavn.val("");
-        telefonNr.val("");
-        epost.val("");
-    }else {
-        console.log("Mangler input")
-    }
+        if (inputval(billett)){
+            $.post("/lagre", billett, () => hent ());
+            film.val("");
+            antall.val("");
+            fornavn.val("");
+            etternavn.val("");
+            telefonNr.val("");
+            epost.val("");
+        }else {
+            console.log("Mangler input")
+        }
 
     });
     $("#slettAlle").click(() => {
@@ -38,7 +38,7 @@ $(() => {
 
 });
 
-const hent = () => $.get("/hent", biler => formater(biler));
+const hent = () => $.get("/hent", billett => formater(billett));
 
 const inputval = billett => {
     if (billett.film === "") return false

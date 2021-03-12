@@ -14,17 +14,17 @@ import java.util.ArrayList;
         @Autowired
         AppRepo repo;
 
-        @PostMapping("/billett")
+        @PostMapping("/lagre")
         public void lagre(Billett billett) {
             repo.leggInn(billett);
         }
 
-        @GetMapping("/billett")
+        @GetMapping("/vis")
         public ArrayList<Billett> hent() {
             return repo.hentAlle();
         }
 
-        @DeleteMapping("/billett")
+        @DeleteMapping("/slett")
         public void slett() {
             repo.slettAlle(); }
     }
