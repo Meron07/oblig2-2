@@ -1,4 +1,4 @@
-package kinobillett.billett;
+package obliger.demo.kinobillett.billett;
 
 public class Billett {
         private String film;

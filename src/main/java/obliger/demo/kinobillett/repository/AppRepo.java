@@ -1,11 +1,11 @@
-package kinobillett.repository;
+package obliger.demo.kinobillett.repository;
 
-import kinobillett.billett.Billett;
+import obliger.demo.kinobillett.billett.Billett;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
-@Repository
 
+@Repository
 public class AppRepo {
     private final ArrayList<Billett> billettliste = new ArrayList<>();
 

@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="index.js"></script>
     <title>Bestilling av Kinobiletter!</title>
-
 
 </head>
 <body>
@@ -26,8 +24,8 @@
                         <option>Friends</option>
                         <option>Rival dale</option>
                         <option>About last Night</option>
+                        <td><div id="filmdiv"></div></td>
                     </select>
-                    <td><div id="filmdiv"></div></td>
                 </div>
                 <div class="form-group">
                     <label for="antall">Antall</label>
@@ -36,12 +34,12 @@
                 </div>
                 <div class="form-group">
                     <label for="fornavn">Fornavn</label>
-                    <input type="text" class="form-control" id="fornavn"/>
+                    <input type="name" class="form-control" id="fornavn"/>
                     <div id="fornavndiv"></div>
                 </div>
                 <div class="form-group">
                     <label for="etternavn">Etternavn </label>
-                    <input type="text" class="form-control" id="etternavn"/>
+                    <input type="name" class="form-control" id="etternavn"/>
                     <div id="etternavndiv"> </div>
                 </div>
                 <div class="form-group">
@@ -56,12 +54,12 @@
                 </div>
 
             </form>
-            <button class="btn btn-primary" id="kjopebillett()">Kjope</button><br/>
+            <button class="btn btn-primary" onclick="kjopebillett()" >Kjøpe</button><br/>
         </div>
         <div class="col-md-12">
-            <h3>Alle bilene:</h3>
+            <h3>Alle Billeter:</h3>
             <div id="boks" class="table-responsive"></div>
-            <button class="btn btn-danger" id="slett()">Slett alle biler</button>
+            <button class="btn btn-danger" onclick="slett()">Slett alle billeter</button>
         </div>
     </div>
 </div>

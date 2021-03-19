@@ -1,15 +1,14 @@
-package kinobillett.controller;
+package obliger.demo.kinobillett.controller;
 
-import kinobillett.billett.Billett;
-import kinobillett.repository.AppRepo;
+import obliger.demo.kinobillett.billett.Billett;
+import obliger.demo.kinobillett.repository.AppRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 
-    @RestController
-    @RequestMapping("/api/kinobillett/")
-
+@RestController
+@RequestMapping("/api/kinobillett")
     public class controller {
         @Autowired
         AppRepo repo;
@@ -19,7 +18,7 @@ import java.util.ArrayList;
             repo.leggInn(billett);
         }
 
-        @GetMapping("/vis")
+        @GetMapping("/hent")
         public ArrayList<Billett> hent() {
             return repo.hentAlle();
         }
