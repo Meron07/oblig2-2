@@ -6,7 +6,7 @@ GitHub brukernavn: Meron07
 
 GitHub repo URL:https://github.com/DATA1700/oblig2-2.git
 
-URL til Heroku app:
+URL til Heroku app: https://oblig-2-2.herokuapp.com/
 
 Fullt navn: Meron Berhe Kidane
 
